@@ -1,20 +1,17 @@
-$body-bg-color: #ffeeec;
-$sda-color: #55125e;
-$navbar-bg-color: #661570;
-$navbar-color: #fff;
+@use "variables" as v;
 
 body {
-  background-color: $body-bg-color;
+  background-color: v.$body-bg-color;
 }
 
 .header-title {
-  color: $sda-color;
+  color: v.$sda-color;
 }
 
 .sda-navbar {
   position: absolute;
   width: 100%;
-  background-color: $navbar-bg-color;
+  background-color: v.$navbar-bg-color;
 
   ul {
     margin: 0;
@@ -30,8 +27,8 @@ body {
           display: block;
           width: 150px;
           padding: 8px;
-          color: $navbar-color;
-          background-color: $navbar-bg-color;
+          color: v.$navbar-color;
+          background-color: v.$navbar-bg-color;
           text-align: center;
           text-transform: uppercase;
           text-decoration: none;
@@ -40,7 +37,7 @@ body {
 
         &:hover,
         &:active {
-          background-color: $sda-color;
+          background-color: v.$sda-color;
         }
       }
     }
